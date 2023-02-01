@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Parsing Apache log files
+# Getting visitor IP + HTTP codes in log file
+
+
+filename="apache-access.log"
+
+awk '{print $1 " " $9}' $filename
